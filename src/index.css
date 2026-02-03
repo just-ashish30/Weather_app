@@ -1,68 +1,71 @@
-* {
-  box-sizing: border-box;
+/* Cities Page Container */
+.cities-container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 20px;
 }
 
-:root {
-  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
-  color: #111;
-  background-color: #fff;
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+/* Title */
+.cities-title {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  text-align: center;
 }
 
-a {
-  font-weight: 500;
-  color: #111;
-  text-decoration: underline;
-}
-a:hover {
-  color: #333;
-}
-
-body {
+/* List reset */
+.cities-list {
+  list-style: none;
+  padding: 0;
   margin: 0;
-  min-width: 320px;
-  min-height: 100vh;
-  background: #fff;
-  color: #111;
 }
 
-h1, h2, h3 {
-  color: #111;
+/* Each city row */
+.city-item {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 15px;
+  border-bottom: 1px solid #e0e0e0;
+  transition: background 0.2s ease;
 }
 
-button {
-  border-radius: 4px;
-  border: 1px solid #333;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
+.city-item:hover {
+  background-color: #f7f9fc;
+}
+
+/* Weather icon */
+.city-icon {
+  width: 60px;
+  height: 60px;
+}
+
+/* City info */
+.city-info {
+  flex: 1;
+}
+
+.city-info h3 {
+  margin: 0;
+  font-size: 1.2rem;
+}
+
+.city-temp {
+  font-weight: bold;
+  margin: 4px 0;
+}
+
+.city-condition {
+  color: #555;
+  font-size: 0.9rem;
+}
+
+/* Details link */
+.details-link {
+  text-decoration: none;
+  color: #0077ff;
   font-weight: 500;
-  font-family: inherit;
-  background-color: #fff;
-  color: #111;
-  cursor: pointer;
-}
-button:hover {
-  background-color: #eee;
-  border-color: #111;
 }
 
-select {
-  border: 1px solid #333;
-  background: #fff;
-  color: #111;
-}
-
-input {
-  border: 1px solid #333;
-  background: #fff;
-  color: #111;
-}
-
-img {
-  max-width: 100%;
+.details-link:hover {
+  text-decoration: underline;
 }
